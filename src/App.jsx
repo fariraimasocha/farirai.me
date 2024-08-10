@@ -1,10 +1,23 @@
-export default function App() {
+import React, { useState, useEffect } from 'react';
+import Loading from '../src/components/Loader'
+import Home from '../src//components/Home';
+
+const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">
-        Main Section
-      </h1>
+      {isLoading ? <Loading /> : <Home />}
     </div>
+  );
+};
 
-  )
-}
+export default App;
