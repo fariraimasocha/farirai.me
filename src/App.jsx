@@ -14,7 +14,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className='bg-darky h-screen'>
       {isLoading ? <Loading /> : <Home />}
     </div>
   );
