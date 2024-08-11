@@ -1,6 +1,6 @@
 import React from 'react'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Footer() {
@@ -16,7 +16,7 @@ function Footer() {
 
                 <div className='justify-center items-center flex space-x-8 font-semibold py-20 '>
                     <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faGlobe} className='text-4xl hover:text-gray-400 transition' />
+                        <FontAwesomeIcon icon={faWhatsapp} className='text-4xl hover:text-gray-400 transition' />
                     </a>
                     <a href="https://github.com/fariraimasocha" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faGithub} className='text-4xl hover:text-gray-400 transition' />
