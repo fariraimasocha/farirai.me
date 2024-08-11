@@ -3,6 +3,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Main from './Main';
 import Projects from './Projects';
+import Footer from './Footer';
 
 function Home() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -22,6 +23,7 @@ function Home() {
             </nav>
             <Main />
             <Projects />
+            <Footer />
 
             {isModalOpen && (
                 <div className='fixed inset-0 bg-chel z-50'>

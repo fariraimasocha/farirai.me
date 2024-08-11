@@ -6,25 +6,26 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Footer() {
     return (
         <div>
-            <footer className='py-5 bg-gray-800 text-white'>
-                <nav className='flex justify-between items-center px-4 md:px-10'>
-                    <div className='space-x-4'>
-                        <a href="#" className='hover:underline'>All Work</a>
-                        <a href="#" className='hover:underline'>About</a>
-                        <a href="#" className='hover:underline'>Contact</a>
-                    </div>
-                    <div id='icons' className='flex space-x-4'>
-                        <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faGlobe} className='text-2xl hover:text-gray-400 transition' />
-                        </a>
-                        <a href="https://github.com/fariraimasocha" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faGithub} className='text-2xl hover:text-gray-400 transition' />
-                        </a>
-                        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faLinkedin} className='text-2xl hover:text-gray-400 transition' />
-                        </a>
-                    </div>
-                </nav>
+            <footer className='py-40 bg-gray-800 text-white'>
+
+                <div className='justify-center items-center flex space-x-5 text-xl font-semibold '>
+                    <a href="#" className='hover:pulse'>All Work</a>
+                    <a href="#" className='hover:pulse'>About</a>
+                    <a href="#" className='hover:pulse'>Contact</a>
+                </div>
+
+                <div className='justify-center items-center flex space-x-8 font-semibold py-20 '>
+                    <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGlobe} className='text-4xl hover:text-gray-400 transition' />
+                    </a>
+                    <a href="https://github.com/fariraimasocha" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGithub} className='text-4xl hover:text-gray-400 transition' />
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faLinkedin} className='text-4xl hover:text-gray-400 transition' />
+                    </a>
+                </div>
+
             </footer>
         </div>
     )
