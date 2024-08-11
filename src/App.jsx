@@ -15,7 +15,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className='bg-lighty h-screen'>
+    <div className='bg-darky h-screen'>
       <AnimatedCursor innerSize={10} outerSize={50} color='0, 0, 0'
         outerAlpha={0} innerScale={1} outerScale={1.5} hasBlendMode={true}
         outerStyle={{
