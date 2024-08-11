@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Footer() {
     return (
         <div>
-            <footer className='py-40 bg-gray-800 text-white'>
+            <footer className='py-40 bg-footbg text-ech1'>
 
                 <div className='justify-center items-center flex space-x-5 text-xl font-semibold '>
                     <a href="#" className='hover:pulse'>All Work</a>
