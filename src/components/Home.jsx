@@ -19,7 +19,7 @@ function Home() {
             href={href}
             className='relative block overflow-hidden
          whitespace-nowrap text-4xl font-black  uppercase
-         sm:text-7xl md:text-8xl lg:text-9xl bg-white
+         sm:text-7xl md:text-8xl lg:text-9xl
         '
         >
             <motion.div
@@ -62,7 +62,7 @@ function Home() {
                     <div className='absolute top-4 right-4'>
                         <FontAwesomeIcon
                             icon={faTimes}
-                            className='text-5xl px-5 py-5 text-white cursor-pointer hover:text-red-500 transition'
+                            className='text-5xl px-5 py-5 text-darky1 cursor-pointer hover:text-red-700 transition'
                             onClick={toggleModal}
                         />
                     </div>
