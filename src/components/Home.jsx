@@ -18,8 +18,8 @@ function Home() {
             whileHover="hovered"
             href={href}
             className='relative block overflow-hidden
-         whitespace-nowrap text-4xl font-black  uppercase
-         sm:text-7xl md:text-8xl lg:text-9xl
+         whitespace-nowrap text-4xl font-serif  uppercase
+         sm:text-6xl md:text-7xl lg:text-8xl
         '
         >
             <motion.div
@@ -41,9 +41,6 @@ function Home() {
         </motion.a>;
     };
 
-
-
-
     return (
         <div className='flex flex-col'>
             <nav className='px-4 md:px-10'>
@@ -62,16 +59,16 @@ function Home() {
                     <div className='absolute top-4 right-4'>
                         <FontAwesomeIcon
                             icon={faTimes}
-                            className='text-5xl px-5 py-5 text-darky1 cursor-pointer hover:text-red-700 transition'
+                            className='text-5xl px-5 py-5 text-darky1 cursor-pointer transition'
                             onClick={toggleModal}
                         />
                     </div>
                     <div className='flex items-center justify-center h-full'>
                         <section className='grid h-screen place-content-center gap-2 text-black'>
-                            <FlipLink href="#">HOME</FlipLink>
-                            <FlipLink href="#">TWITTER</FlipLink>
-                            <FlipLink href="#">GITHUB</FlipLink>
-                            <FlipLink href="#">LINKEDLN</FlipLink>
+                            <FlipLink href="#">Home</FlipLink>
+                            <FlipLink href="#">All work </FlipLink>
+                            <FlipLink href="#">About</FlipLink>
+                            <FlipLink href="#">Contact</FlipLink>
 
                         </section>
                     </div>
