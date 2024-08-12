@@ -3,9 +3,9 @@ import React from 'react';
 
 function Company({ companyName, project, field, presentation, bgClass }) {
     return (
-        <div className={`flex justify-between px-20 border-b py-40 transition hover:${bgClass}`}>
+        <div className={`flex justify-between px-20 border-b-2 border-pink py-40 transition hover:${bgClass}`}>
             <div>
-                <h1 className='text-8xl font-black'>
+                <h1 className='text-8xl font-black hover:text-darky1 transition'>
                     {companyName}
                 </h1>
                 <p className='text-2xl font-semibold tracking-widest'>
@@ -16,7 +16,7 @@ function Company({ companyName, project, field, presentation, bgClass }) {
                 <h1 className='text-2xl font-semibold'>
                     {field}
                 </h1>
-                <p className='text-2xl font-semibold'>
+                <p className='text-2xl font-semibold mt-1'>
                     {presentation}
                 </p>
             </div>
