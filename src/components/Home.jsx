@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { Children, useState } from 'react';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Main from './Main';
 import Projects from './Projects';
 import Footer from './Footer';
+import { motion } from 'framer-motion';
 
 function Home() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -11,6 +12,37 @@ function Home() {
     const toggleModal = () => {
         setIsModalOpen(!isModalOpen);
     };
+    const FlipLink = ({ children, href }) => {
+        return <motion.a
+            initial="initial"
+            whileHover="hovered"
+            href={href}
+            className='relative block overflow-hidden
+         whitespace-nowrap text-4xl font-black  uppercase
+         sm:text-7xl md:text-8xl lg:text-9xl bg-white
+        '
+        >
+            <motion.div
+                variants={{
+                    initial: { y: 0 },
+                    hovered: { y: "-100%" },
+                }}>
+                {children}
+            </motion.div>
+            <motion.div
+                className='absolute inset-0'
+                variants={{
+                    initial: { y: "100%" },
+                    hovered: { y: 0 },
+                }}>
+                {children}
+            </motion.div>
+
+        </motion.a>;
+    };
+
+
+
 
     return (
         <div className='flex flex-col'>
@@ -35,9 +67,13 @@ function Home() {
                         />
                     </div>
                     <div className='flex items-center justify-center h-full'>
-                        <div className='text-center text-white'>
-                            {/* Content for modal */}
-                        </div>
+                        <section className='grid h-screen place-content-center gap-2 text-black'>
+                            <FlipLink href="#">HOME</FlipLink>
+                            <FlipLink href="#">TWITTER</FlipLink>
+                            <FlipLink href="#">GITHUB</FlipLink>
+                            <FlipLink href="#">LINKEDLN</FlipLink>
+
+                        </section>
                     </div>
                 </div>
             )}
