@@ -16,7 +16,7 @@ function Projects() {
                     project="Contractease website"
                     field="WEB DEVELOPMENT"
                     presentation="WEBSITE"
-                    onHover={() => setBgClass('bg-yellow-500')}
+                    onHover={() => setBgClass('bg-yel')}
                     onHoverOut={() => setBgClass('bg-blue-300')}
                 />
                 <Company
@@ -24,7 +24,7 @@ function Projects() {
                     project="Livestock tracking system"
                     field="IOT"
                     presentation="PRODUCT"
-                    onHover={() => setBgClass('bg-red-500')}
+                    onHover={() => setBgClass('bg-peach')}
                     onHoverOut={() => setBgClass('bg-blue-300')}
                 />
                 <Company
@@ -32,7 +32,7 @@ function Projects() {
                     project="Satechi E Learning website"
                     field="WEB DESIGN"
                     presentation="WEBSITE"
-                    onHover={() => setBgClass('bg-pink-500')}
+                    onHover={() => setBgClass('bg-pin')}
                     onHoverOut={() => setBgClass('bg-blue-300')}
                 />
             </div>
