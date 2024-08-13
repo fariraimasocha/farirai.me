@@ -55,7 +55,7 @@ function Home() {
             <Footer />
 
             {isModalOpen && (
-                <div className='fixed inset-0 bg-chel z-50'>
+                <div className='fixed inset-0 bg-yel z-50'>
                     <div className='absolute top-4 right-4'>
                         <FontAwesomeIcon
                             icon={faTimes}
