@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const NavModal = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const navigate = useNavigate();
+    const location = useLocation();
 
     const toggleModal = () => {
         setIsModalOpen(!isModalOpen);
@@ -46,13 +47,28 @@ const NavModal = () => {
         );
     };
 
+    // Determine whether to show the logo
+    const shouldShowLogo = location.pathname === '/contact' || location.pathname === '/all-work';
+
     return (
         <div>
-            <FontAwesomeIcon
-                icon={faBars}
-                className='text-3xl md:text-4xl hover:text-gray-400 transition absolute right-4 top-4 md:right-10 md:top-10 cursor-pointer'
-                onClick={toggleModal}
-            />
+            <div className='flex items-center'>
+                <FontAwesomeIcon
+                    icon={faBars}
+                    className='text-3xl md:text-7xl hover:text-gray-400 transition absolute 
+                    right-4 top-4 md:right-10 md:top-10 cursor-pointer'
+                    onClick={toggleModal}
+                />
+                {shouldShowLogo && (
+                    <div className='ml-10 mt-10'>
+                        <div>
+                            <h2 className='text-2xl text-center font-serif'>farirai</h2>
+                            <h2 className='text-3xl text-center font-extrabold'>Masocha</h2>
+                        </div>
+                    </div>
+                )}
+            </div>
+
             {isModalOpen && (
                 <div className='fixed inset-0 bg-yel z-50'>
                     <div className='absolute top-4 right-4'>
