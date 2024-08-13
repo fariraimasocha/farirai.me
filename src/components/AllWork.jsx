@@ -11,16 +11,23 @@ function AllWork() {
                     <h2 className="font-light text-center md:text-left">ALL</h2>
                     <h2 className="font-light mt-5 md:mt-10 text-center md:text-left">WORK</h2>
                 </div>
-                <div className='flex space-x-5 px-10'>
+                <div className='flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5 px-4 md:px-16 py-10'>
                     <CompanyCard
-                        field="field"
-                        presentation="presentation"
+                        field="ui"
+                        presentation="visual"
                         imageSrc="images/favicon/favicon.png"
                         companyName="Yirifi.ai"
-                        description="Campaign pages" />
+                        description="Campaign pages"
+                        mt="mt-5 md:mt-0" />
+                    <CompanyCard
+                        field="website"
+                        presentation="visual"
+                        imageSrc="images/favicon/favicon.png"
+                        companyName="Yirifi.ai"
+                        description="Campaign pages"
+                        mt="" />
                 </div>
             </div>
-
         </div>
     )
 }
