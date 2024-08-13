@@ -6,10 +6,11 @@ function Projects() {
 
     return (
         <div className={`transition ${bgClass}`}>
-            <div className='flex space-x-5 mb-4 justify-center mx-auto text-7xl py-20 hover:animate-pulse'>
-                <h2 className='font-light'>FEATURED</h2>
-                <h2 className='font-light mt-10'>PROJECTS</h2>
+            <div className="flex flex-col md:flex-row md:space-x-5 mb-4 justify-center mx-auto text-4xl md:text-7xl py-10 md:py-20 hover:animate-pulse">
+                <h2 className="font-light text-center md:text-left">FEATURED</h2>
+                <h2 className="font-light mt-5 md:mt-10 text-center md:text-left">PROJECTS</h2>
             </div>
+
             <div className='justify-center mx-auto w-11/12'>
                 <Company
                     companyName="Flixtechs"
