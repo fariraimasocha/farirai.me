@@ -9,7 +9,7 @@ function CompanyCard({ field, presentation, companyName, imageSrc, description }
                     <p className='mt-2'>{presentation}</p>
                 </div>
             </div>
-            <div className='flex justify-center p-4'>
+            <div className='flex justify-center p-4 py-20'>
                 <img src={imageSrc} alt="No Image" className='max-w-full h-auto' />
             </div>
             <div className='flex justify-start p-4 px-5 py-5'>
@@ -19,7 +19,7 @@ function CompanyCard({ field, presentation, companyName, imageSrc, description }
                     >
                         {companyName}
                     </p>
-                    <p className='mt-2 tracking-wider'>{description}</p>
+                    <p className='mt-2 tracking-wider text-lg'>{description}</p>
                 </div>
             </div>
         </div>
