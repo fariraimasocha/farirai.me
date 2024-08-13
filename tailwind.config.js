@@ -15,7 +15,8 @@ export default {
         'pin': '#eabfd1',
         'chel': '#f5c4b1',
         'footbg': '#ffdee2',
-        'peach': '#f2c2bb'
+        'peach': '#f2c2bb',
+        'project': '#181532'
 
 
 
