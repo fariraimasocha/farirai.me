@@ -1,5 +1,6 @@
 import React from 'react'
 import NavModal from './NavModal'
+import CompanyCard from './CompanyCard'
 
 function AllWork() {
     return (
@@ -10,8 +11,13 @@ function AllWork() {
                     <h2 className="font-light text-center md:text-left">ALL</h2>
                     <h2 className="font-light mt-5 md:mt-10 text-center md:text-left">WORK</h2>
                 </div>
-                <div className='flex space-x-5'>
-
+                <div className='flex space-x-5 px-10'>
+                    <CompanyCard
+                        field="field"
+                        presentation="presentation"
+                        imageSrc="/"
+                        companyName="companyName"
+                        description="description" />
                 </div>
             </div>
 
