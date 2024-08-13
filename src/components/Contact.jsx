@@ -1,8 +1,11 @@
 import React from 'react'
+import NavModal from './NavModal'
 
 function Contact() {
     return (
-        <div>Contact</div>
+        <div>
+            <NavModal />
+        </div>
     )
 }
 
