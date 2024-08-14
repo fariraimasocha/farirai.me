@@ -13,30 +13,36 @@ function Projects() {
             </div>
 
             <div className='justify-center mx-auto w-11/12'>
-                <Company
-                    companyName="Flixtechs"
-                    project="Contractease website"
-                    field="WEB DEVELOPMENT"
-                    presentation="WEBSITE"
-                    onHover={() => setBgClass('bg-yel')}
-                    onHoverOut={() => setBgClass('bg-blue-300')}
-                />
-                <Company
-                    companyName="Codecrafters"
-                    project="Livestock tracking system"
-                    field="IOT"
-                    presentation="PRODUCT"
-                    onHover={() => setBgClass('bg-peach')}
-                    onHoverOut={() => setBgClass('bg-blue-300')}
-                />
-                <Company
-                    companyName="Tirelo Capital"
-                    project="Satechi E Learning website"
-                    field="WEB DESIGN"
-                    presentation="WEBSITE"
-                    onHover={() => setBgClass('bg-pin')}
-                    onHoverOut={() => setBgClass('bg-blue-300')}
-                />
+                <Link to="/project">
+                    <Company
+                        companyName="Flixtechs"
+                        project="Contractease website"
+                        field="WEB DEVELOPMENT"
+                        presentation="WEBSITE"
+                        onHover={() => setBgClass('bg-yel')}
+                        onHoverOut={() => setBgClass('bg-blue-300')}
+                    />
+                </Link>
+                <Link to="/project">
+                    <Company
+                        companyName="Codecrafters"
+                        project="Livestock tracking system"
+                        field="IOT"
+                        presentation="PRODUCT"
+                        onHover={() => setBgClass('bg-peach')}
+                        onHoverOut={() => setBgClass('bg-blue-300')}
+                    />
+                </Link>
+                <Link to="/project">
+                    <Company
+                        companyName="Tirelo Capital"
+                        project="Satechi E Learning website"
+                        field="WEB DESIGN"
+                        presentation="WEBSITE"
+                        onHover={() => setBgClass('bg-pin')}
+                        onHoverOut={() => setBgClass('bg-blue-300')}
+                    />
+                </Link>
             </div>
             <div className='flex items-center justify-center px-20 border-b hover:bg-darky py-40 transition'>
                 <Link to="/all-work">
