@@ -2,6 +2,7 @@ import React from 'react'
 import NavModal from './NavModal'
 import { Link } from 'react-router-dom'
 import CompanyCard from './CompanyCard'
+import Footer from './Footer'
 
 function About() {
     return (
@@ -70,6 +71,7 @@ function About() {
                     </Link>
                 </div>
             </div>
+            <Footer />
 
         </div>
     )

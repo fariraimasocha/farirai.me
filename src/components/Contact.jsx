@@ -1,5 +1,6 @@
 import React from 'react';
 import NavModal from './NavModal';
+import Footer from './Footer';
 
 function Contact() {
     return (
@@ -46,6 +47,7 @@ function Contact() {
                     </form>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Footer() {
     return (
         <div>
-            <footer className='py-40 bg-footbg text-ech1'>
+            <footer className='py-20 bg-footbg text-ech1'>
 
                 <div className='justify-center items-center flex space-x-5 text-2xl font-semibold '>
                     <a href="#" className='hover:pulse'>All Work</a>
@@ -14,7 +14,7 @@ function Footer() {
                     <a href="#" className='hover:pulse'>Contact</a>
                 </div>
 
-                <div className='justify-center items-center flex space-x-8 font-semibold py-20'>
+                <div className='justify-center items-center flex space-x-8 font-semibold py-10'>
                     <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faWhatsapp} className='text-4xl hover:text-gray-400 transition' />
                     </a>
