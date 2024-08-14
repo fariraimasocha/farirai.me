@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Company from './Company';
+import { Link } from 'react-router-dom';
 
 function Projects() {
     const [bgClass, setBgClass] = useState('bg-blue-300');
@@ -38,9 +39,9 @@ function Projects() {
                 />
             </div>
             <div className='flex items-center justify-center px-20 border-b hover:bg-darky py-40 transition'>
-                <a href="#">
+                <Link to="/all-work">
                     <button className='px-6 py-2 rounded-3xl ring-2 ring-darky1 text-darky1 font-semibold text-2xl hover:bg-black hover:text-white'>All Work</button>
-                </a>
+                </Link>
             </div>
         </div>
     );

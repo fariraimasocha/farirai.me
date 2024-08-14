@@ -12,6 +12,24 @@ function AllWork() {
                     <h2 className="font-light mt-5 md:mt-10 text-center md:text-left">WORK</h2>
                 </div>
                 <div className='flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5 px-4 md:px-16 py-10'>
+
+                    <CompanyCard
+                        field="website"
+                        presentation="visual"
+                        imageSrc="images/favicon/favicon.png"
+                        companyName="Flixtechs"
+                        description="Contractease website"
+                        mt="" />
+                    <CompanyCard
+                        field="iot tag"
+                        presentation="visual"
+                        imageSrc="images/favicon/favicon.png"
+                        companyName="Coderafters"
+                        description="Livestock Antitheft System"
+                        mt="" />
+
+                </div>
+                <div className='flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5 px-4 md:px-16 py-10'>
                     <CompanyCard
                         field="ui"
                         presentation="visual"
@@ -19,13 +37,6 @@ function AllWork() {
                         companyName="Yirifi.ai"
                         description="Campaign pages"
                         mt="mt-5 md:mt-0" />
-                    <CompanyCard
-                        field="website"
-                        presentation="visual"
-                        imageSrc="images/favicon/favicon.png"
-                        companyName="Yirifi.ai"
-                        description="Campaign pages"
-                        mt="" />
                 </div>
             </div>
         </div>
