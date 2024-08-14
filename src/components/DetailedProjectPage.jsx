@@ -19,7 +19,6 @@ const DetailedProjectPage = () => {
             imageSrc: "images/project-beta.jpg",
             additionalInfo: "Additional information about Project Beta."
         }
-        // Add more projects as needed
     };
 
     const project = projectDetails[projectId] || { title: "Project not found", description: "", imageSrc: "", additionalInfo: "" };

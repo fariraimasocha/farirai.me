@@ -33,11 +33,11 @@ function Projects() {
                         onHoverOut={() => setBgClass('bg-blue-300')}
                     />
                 </Link>
-                <Link to="/project/tirelo-capital">
+                <Link to="/project/metbank">
                     <Company
-                        companyName="Tirelo Capital"
-                        project="Satechi E Learning website"
-                        field="WEB DESIGN"
+                        companyName="Metbank"
+                        project="Emphaya website"
+                        field="BACKEND DEVELOPMENT"
                         presentation="WEBSITE"
                         onHover={() => setBgClass('bg-pin')}
                         onHoverOut={() => setBgClass('bg-blue-300')}

@@ -34,7 +34,7 @@ function ProjectPage() {
     return (
         <div className='min-h-screen flex flex-col'>
             <NavModal />
-            <div className='bg-darky1 mt-44 min-h-screen flex justify-between px-20'>
+            <div className='bg-darky1 px-20 flex justify-between'>
                 <div className='md:w-8/12'>
                     <h1 className='font-serif bg-gradient-to-r mt-10 md:mt-80 from-blue-500 to-red-500 bg-clip-text text-transparent text-5xl md:text-9xl font-bold'>
                         {project.companyName}
@@ -71,7 +71,6 @@ function ProjectPage() {
             </div>
             <Footer />
         </div>
-
     );
 }
 
