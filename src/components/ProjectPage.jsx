@@ -54,20 +54,25 @@ function ProjectPage() {
                         {project.overview}
                     </p>
                 </div>
-                <div className='md:mr-20 mt-10 md:mt-80 md:py-80 md:mb-10 m:mb-10'>
+                <div className='mr-4 md:mr-20 mt-10 md:mt-80 py-4 md:py-80 mb-10'>
                     <div className='mt-5'>
-                        <h2 className='uppercase py-2 md:py-4 tracking-wider font-light bg-gradient-to-r from-red-300 to-red-500 bg-clip-text text-transparent text-lg md:text-xl'>
+                        <h2 className='uppercase py-2 tracking-wider font-light bg-gradient-to-r from-red-300 to-red-500 bg-clip-text text-transparent text-lg md:text-xl'>
                             Focus
                         </h2>
-                        <p className='font-sans text-lg md:text-xl text-darky'>{project.projectType}</p>
+                        <p className='font-sans text-base md:text-xl text-darky'>
+                            {project.projectType}
+                        </p>
                     </div>
                     <div className='mt-5'>
-                        <h2 className='uppercase py-2 md:py-4 tracking-wider font-light bg-gradient-to-r from-red-300 to-red-500 bg-clip-text text-transparent text-lg md:text-xl'>
+                        <h2 className='uppercase py-2 tracking-wider font-light bg-gradient-to-r from-red-300 to-red-500 bg-clip-text text-transparent text-lg md:text-xl'>
                             Role
                         </h2>
-                        <p className='font-sans text-lg md:text-xl text-darky'>{project.role}</p>
+                        <p className='font-sans text-base md:text-xl text-darky'>
+                            {project.role}
+                        </p>
                     </div>
                 </div>
+
             </div>
             <Footer />
         </div>
