@@ -19,9 +19,17 @@ function ProjectPage() {
             companyName: "Codecrafters",
             overview: "My journey as a Full-Stack Web Developer has been remarkable, particularly in the realm of building DeFi crypto platforms. I developed scalable backend services using Node.js, Express, and PostgreSQL, which were later transitioned to a serverless architecture. For the front-end, I utilized React for dynamic interfaces, Framer Motion for engaging animations, and Tailwind CSS for styling. I managed the deployment of both the front-end and backend, including the database, to AWS, ensuring a robust and efficient infrastructure.",
             projectType: "Web Development",
-            role: "Laravel Developer",
+            role: "Full Stack Developer",
             imageSrc: "images/favicon/favicon.png",
-            description: "Contractease website",
+            description: "Livestock Anithithefy System",
+        },
+        "metbank": {
+            companyName: "Metbank",
+            overview: "In my role as a Backend Developer, I used Laravel and Java to create USSD services, enabling secure access to banking services. As a Web Developer, I built and updated numerous websites and secure, scalable banking web apps. I also served as a Cloud Professional, overseeing the deployment of projects to various Linux and Windows servers and ensuring continuous integration. Additionally, I optimized database queries for Metbank, reducing report generation time by 50%, and maintained a 99.99% system uptime for the Decentralized Trade Association's infrastructure.",
+            projectType: "Backend Services",
+            role: "Full Stack Developer",
+            imageSrc: "images/favicon/favicon.png",
+            description: "Livestock Anithithefy System",
         },
     };
 
@@ -45,14 +53,6 @@ function ProjectPage() {
                     <p className='text-gray-500 mt-4 md:mt-8 font-light w-full md:w-9/12 font-serif text-xl md:text-2xl'>
                         {project.overview}
                     </p>
-
-                    <div className='py-6 md:py-10'>
-                        <button
-                            type='submit'
-                            className='px-4 md:px-6 rounded-3xl bg-darky ring-2 ring-darky text-darky2 py-2 font-semibold text-lg md:text-2xl hover:bg-black hover:text-white font-serif'>
-                            Send Message
-                        </button>
-                    </div>
                 </div>
                 <div className='md:mr-20 mt-20 md:mt-80 md:py-80 md:mb-10 sm:mb-10'>
                     <div className='mt-5'>

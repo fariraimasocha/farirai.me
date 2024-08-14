@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 const DetailedProjectPage = () => {
     const { projectId } = useParams();
 
-    // Mock data or fetch data based on projectId
+
     const projectDetails = {
         1: {
             title: "Project Alpha",
