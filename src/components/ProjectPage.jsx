@@ -54,7 +54,7 @@ function ProjectPage() {
                         {project.overview}
                     </p>
                 </div>
-                <div className='md:mr-20 mt-10 md:mt-80 md:py-80 md:mb-10'>
+                <div className='md:mr-20 mt-10 md:mt-80 md:py-80 md:mb-10 m:mb-10'>
                     <div className='mt-5'>
                         <h2 className='uppercase py-2 md:py-4 tracking-wider font-light bg-gradient-to-r from-red-300 to-red-500 bg-clip-text text-transparent text-lg md:text-xl'>
                             Focus
