@@ -6,7 +6,6 @@ import Contact from '../src/components/Contact';
 import AllWork from '../src/components/AllWork';
 import About from './components/About';
 import ProjectPage from './components/ProjectPage'; // Keep this
-import DetailedProjectPage from './components/DetailedProjectPage'; // New route
 import { Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -31,7 +30,6 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/project/:projectId" element={<ProjectPage />} />
-          <Route path="/detailed-project-page" element={<DetailedProjectPage />} />
         </Routes>
       )}
     </div>

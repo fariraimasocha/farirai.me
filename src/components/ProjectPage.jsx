@@ -42,27 +42,27 @@ function ProjectPage() {
     return (
         <div className='min-h-screen flex flex-col'>
             <NavModal />
-            <div className='bg-darky1 mt-44 min-h-screen flex justify-between px-20'>
+            <div className='bg-darky1 mt-32 md:mt-44 min-h-screen flex flex-col md:flex-row justify-between px-4 md:px-20'>
                 <div className='md:w-8/12'>
-                    <h1 className='font-serif bg-gradient-to-r mt-10 md:mt-80 from-blue-500 to-red-500 bg-clip-text text-transparent text-5xl md:text-9xl font-bold'>
+                    <h1 className='font-serif bg-gradient-to-r mt-10 md:mt-80 from-blue-500 to-red-500 bg-clip-text text-transparent text-4xl md:text-9xl font-bold'>
                         {project.companyName}
                     </h1>
-                    <h2 className='uppercase font-light bg-gradient-to-r mt-5 md:mt-40 from-blue-500 to-red-500 bg-clip-text text-transparent text-4xl md:text-6xl'>
+                    <h2 className='uppercase font-light bg-gradient-to-r mt-5 md:mt-40 from-blue-500 to-red-500 bg-clip-text text-transparent text-2xl md:text-6xl'>
                         Overview
                     </h2>
-                    <p className='text-gray-500 mt-4 md:mt-8 font-light w-full md:w-9/12 font-serif text-xl md:text-2xl'>
+                    <p className='text-gray-500 mt-4 md:mt-8 font-light w-full md:w-9/12 font-serif text-lg md:text-2xl'>
                         {project.overview}
                     </p>
                 </div>
-                <div className='md:mr-20 mt-20 md:mt-80 md:py-80 md:mb-10 sm:mb-10'>
+                <div className='md:mr-20 mt-10 md:mt-80 md:py-80 md:mb-10'>
                     <div className='mt-5'>
-                        <h2 className='uppercase py-4 md:py-2 tracking-wider font-light bg-gradient-to-r from-red-300 to-red-500 bg-clip-text text-transparent text-lg md:text-xl'>
+                        <h2 className='uppercase py-2 md:py-4 tracking-wider font-light bg-gradient-to-r from-red-300 to-red-500 bg-clip-text text-transparent text-lg md:text-xl'>
                             Focus
                         </h2>
                         <p className='font-sans text-lg md:text-xl text-darky'>{project.projectType}</p>
                     </div>
                     <div className='mt-5'>
-                        <h2 className='uppercase py-4 md:py-2 tracking-wider font-light bg-gradient-to-r from-red-300 to-red-500 bg-clip-text text-transparent text-lg md:text-xl'>
+                        <h2 className='uppercase py-2 md:py-4 tracking-wider font-light bg-gradient-to-r from-red-300 to-red-500 bg-clip-text text-transparent text-lg md:text-xl'>
                             Role
                         </h2>
                         <p className='font-sans text-lg md:text-xl text-darky'>{project.role}</p>
@@ -71,7 +71,6 @@ function ProjectPage() {
             </div>
             <Footer />
         </div>
-
     );
 }
 
