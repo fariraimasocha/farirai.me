@@ -56,11 +56,11 @@ const NavModal = () => {
                 <FontAwesomeIcon
                     icon={faBars}
                     className='text-3xl md:text-7xl hover:text-gray-400 transition absolute 
-                    right-4 top-4 md:right-10 md:top-10 cursor-pointer'
+                    right-4 top-4 md:right-20 md:top-10 cursor-pointer'
                     onClick={toggleModal}
                 />
                 {shouldShowLogo && (
-                    <div className='ml-10 mt-10'>
+                    <div className='ml-20 mt-10'>
                         <div>
                             <h2 className='text-2xl text-center font-serif'>farirai</h2>
                             <h2 className='text-3xl text-center font-extrabold'>Masocha</h2>

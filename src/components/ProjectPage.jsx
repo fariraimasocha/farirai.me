@@ -1,8 +1,11 @@
 import React from 'react'
+import NavModal from './NavModal'
 
 function ProjectPage() {
     return (
-        <div>ProjectPage</div>
+        <div>
+            <NavModal />
+        </div>
     )
 }
 
