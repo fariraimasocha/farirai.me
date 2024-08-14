@@ -48,7 +48,7 @@ const NavModal = () => {
     };
 
     // Determine whether to show the logo
-    const shouldShowLogo = location.pathname === '/contact' || location.pathname === '/all-work';
+    const shouldShowLogo = location.pathname === '/contact' || location.pathname === '/all-work' || location.pathname === '/about';
 
     return (
         <div>

@@ -16,7 +16,8 @@ export default {
         'chel': '#f5c4b1',
         'footbg': '#ffdee2',
         'peach': '#f2c2bb',
-        'project': '#181532'
+        'project': '#181532',
+        'lighty': '#ffecef'
 
 
 
