@@ -1,7 +1,9 @@
-import React from 'react'
-import NavModal from './NavModal'
-import CompanyCard from './CompanyCard'
-import Footer from './Footer'
+// src/components/AllWork.jsx
+import React from 'react';
+import NavModal from './NavModal';
+import Footer from './Footer';
+import Card from './Card';
+
 
 function AllWork() {
     return (
@@ -12,37 +14,20 @@ function AllWork() {
                     <h2 className="font-light text-center md:text-left">ALL</h2>
                     <h2 className="font-light mt-5 md:mt-10 text-center md:text-left">WORK</h2>
                 </div>
-                <div className='flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5 px-4 md:px-16 py-10'>
-
-                    <CompanyCard
-                        field="website"
-                        presentation="visual"
-                        imageSrc="images/favicon/favicon.png"
-                        companyName="Flixtechs"
-                        description="Contractease website"
-                        mt="" />
-                    {/* <CompanyCard
-                        field="iot tag"
-                        presentation="visual"
-                        imageSrc="images/favicon/favicon.png"
-                        companyName="Coderafters"
-                        description="Livestock Antitheft System"
-                        mt="" /> */}
-
-                </div>
-                <div className='flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5 px-4 md:px-16 py-10'>
-                    {/* <CompanyCard
-                        field="ui"
-                        presentation="visual"
-                        imageSrc="images/favicon/favicon.png"
-                        companyName="Yirifi.ai"
-                        description="Campaign pages"
-                        mt="mt-5 md:mt-0" /> */}
+                <div className='px-4 md:px-16 py-10'>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <Card
+                            title="Noteworthy technology acquisitions 2021"
+                            description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+                            imageSrc="images/hello.jpg"
+                            link="/detailed-project-page"
+                        />
+                    </div>
                 </div>
             </div>
             <Footer />
         </div>
-    )
+    );
 }
 
-export default AllWork
+export default AllWork;
