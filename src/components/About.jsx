@@ -55,13 +55,13 @@ function About() {
                         companyName="Flixtechs"
                         description="Contractease website"
                         mt="" />
-                    <CompanyCard
+                    {/* <CompanyCard
                         field="iot tag"
                         presentation="visual"
                         imageSrc="images/favicon/favicon.png"
                         companyName="Coderafters"
                         description="Livestock Antitheft System"
-                        mt="" />
+                        mt="" /> */}
 
                 </div>
 

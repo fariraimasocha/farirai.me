@@ -55,7 +55,7 @@ const NavModal = () => {
             <div className='flex items-center'>
                 <FontAwesomeIcon
                     icon={faBars}
-                    className='text-3xl md:text-7xl hover:text-gray-400 transition absolute 
+                    className='text-3xl md:text-6xl hover:text-gray-400 transition absolute 
                     right-4 top-4 md:right-20 md:top-10 cursor-pointer'
                     onClick={toggleModal}
                 />
@@ -79,7 +79,7 @@ const NavModal = () => {
                         />
                     </div>
                     <div className='flex items-center justify-center h-full'>
-                        <section className='grid h-screen place-content-center gap-2 text-black'>
+                        <section className='grid h-screen place-content-center gap-2 text-black cursor-pointer'>
                             <FlipLink to="/">Home</FlipLink>
                             <FlipLink to="/all-work">All work</FlipLink>
                             <FlipLink to="/about">About</FlipLink>
