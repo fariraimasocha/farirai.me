@@ -1,5 +1,8 @@
-import React from 'react'
-import NavModal from './NavModal'
+import React from 'react';
+import { Link } from 'react-router-dom'; // Add this import
+import NavModal from './NavModal';
+import CompanyCard from './CompanyCard';
+import Footer from './Footer';
 
 function ProjectPage() {
     return (
@@ -32,7 +35,7 @@ function ProjectPage() {
                         </button>
                     </div>
                 </div>
-                <div className='md:mr-20 mt-20 md:mt-80'>
+                <div className='md:mr-20 mt-20 md:mt-80 md:mb-10 sm:mb-10'>
                     <div className='mt-20 md:mt-96'>
                         <h2 className='uppercase py-4 md:py-2 tracking-wider font-light bg-gradient-to-r from-red-300 to-red-500 bg-clip-text text-transparent text-lg md:text-xl'>
                             Client
@@ -53,9 +56,40 @@ function ProjectPage() {
                     </div>
                 </div>
             </div>
+            <div className='bg-blue-300 min-h-screen'>
+                <div className="flex flex-col md:flex-row md:space-x-5 mb-4 justify-center mx-auto mt-10 text-4xl md:text-7xl py-10 md:py-20 hover:animate-pulse bg-blue-300">
+                    <h2 className="font-light text-center md:text-left">ALL</h2>
+                    <h2 className="font-light mt-5 md:mt-10 text-center md:text-left">WORK</h2>
+                </div>
 
+                <div className='flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5 px-4 md:px-16 py-10'>
+
+                    <CompanyCard
+                        field="website"
+                        presentation="visual"
+                        imageSrc="images/favicon/favicon.png"
+                        companyName="Flixtechs"
+                        description="Contractease website"
+                        mt="" />
+                    {/* <CompanyCard
+                        field="iot tag"
+                        presentation="visual"
+                        imageSrc="images/favicon/favicon.png"
+                        companyName="Coderafters"
+                        description="Livestock Antitheft System"
+                        mt="" /> */}
+
+                </div>
+
+                <Link to="/all-work">
+                    <div className='flex items-center justify-center px-20 border-b py-20 transition'>
+                        <button className='px-6 py-2 rounded-3xl ring-2 ring-darky1 text-darky1 font-semibold text-2xl hover:bg-black hover:text-white'>All Work</button>
+                    </div>
+                </Link>
+            </div>
+            <Footer />
         </div>
-    )
+    );
 }
 
-export default ProjectPage
+export default ProjectPage;

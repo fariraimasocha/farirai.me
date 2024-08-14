@@ -1,8 +1,18 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 function CompanyCard({ field, presentation, companyName, imageSrc, description, mt }) {
     return (
-        <div className={`w-full md:w-6/12 bg-darky1 rounded-3xl text-white flex flex-col relative hover:bg-chel transition hover:text-darky1 ${mt}`}>
+        <motion.div
+            className={`w-full md:w-6/12 bg-darky1 rounded-3xl text-white flex flex-col relative hover:bg-chel transition hover:text-darky1 ${mt}`}
+            whileHover={{
+                scale: 1.05,
+                rotateY: 15,
+                rotateX: 10,
+                transition: { duration: 0.5 },
+            }}
+            style={{ perspective: 1000 }}
+        >
             <div className='flex justify-end p-2 md:p-4'>
                 <div className='uppercase tracking-widest px-3 md:px-5 py-3 md:py-5 text-sm md:text-base'>
                     <p>{field}</p>
@@ -22,7 +32,7 @@ function CompanyCard({ field, presentation, companyName, imageSrc, description, 
                     <p className='mt-2 tracking-wider text-sm md:text-lg'>{description}</p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 
