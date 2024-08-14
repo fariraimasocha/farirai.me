@@ -1,6 +1,7 @@
 import React from 'react'
 import NavModal from './NavModal'
 import CompanyCard from './CompanyCard'
+import Footer from './Footer'
 
 function AllWork() {
     return (
@@ -20,25 +21,26 @@ function AllWork() {
                         companyName="Flixtechs"
                         description="Contractease website"
                         mt="" />
-                    <CompanyCard
+                    {/* <CompanyCard
                         field="iot tag"
                         presentation="visual"
                         imageSrc="images/favicon/favicon.png"
                         companyName="Coderafters"
                         description="Livestock Antitheft System"
-                        mt="" />
+                        mt="" /> */}
 
                 </div>
                 <div className='flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5 px-4 md:px-16 py-10'>
-                    <CompanyCard
+                    {/* <CompanyCard
                         field="ui"
                         presentation="visual"
                         imageSrc="images/favicon/favicon.png"
                         companyName="Yirifi.ai"
                         description="Campaign pages"
-                        mt="mt-5 md:mt-0" />
+                        mt="mt-5 md:mt-0" /> */}
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
