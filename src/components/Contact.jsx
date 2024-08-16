@@ -3,12 +3,20 @@ import NavModal from './NavModal';
 import Footer from './Footer';
 
 function Contact() {
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = '/resume/my_resume.pdf';
+        link.setAttribute('download', 'my_resume.pdf');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <div className='min-h-screen flex flex-col'>
             <NavModal />
             <div className='flex-grow px-6 md:px-10 py-10'>
                 <h2 className='font-serif text-red-400 text-5xl md:text-7xl lg:text-9xl mt-16 md:mt-32 text-center md:text-left'>Contact</h2>
-                <button>Download Resume</button>
                 <div className='mt-10 md:mt-16 text-center md:text-left'>
                     <p className='text-ech1 text-lg md:text-xl lg:text-2xl mx-auto md:ml-11 md:w-8/12 lg:w-6/12 font-serif'>
                         I'm currently available for freelance work whilst considering my next permanent position.
