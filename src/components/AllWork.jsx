@@ -34,6 +34,13 @@ function AllWork() {
                             imageSrc="images/emphaya.png"
                             link="https://empaya.co.zw/"
                         />
+                        <Card
+                            title="Chatsphere Chatbot"
+                            description="Supercharge your Customer Service with Custom web chatbots. Say goodbye to long wait times and frustrating interactions. Our chatbots provide 24/7 assistance tailored to your customers."
+                            imageSrc="images/chatsphere.png"
+                            link="https://fariraimasocha.github.io/ChatSphere/"
+                        />
+
                     </div>
                 </div>
             </div>
