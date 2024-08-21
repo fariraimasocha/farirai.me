@@ -9,6 +9,7 @@ function Main() {
                 <h1 className='font-serif text-5xl md:text-7xl lg:text-9xl text-ech2 hover:text-ech1 hover:animate-pulse'>
                     farirai
                 </h1>
+                <img src="images/lufy.png" alt="" className='w-32' />
                 <h1 className='font-extrabold text-5xl md:text-7xl lg:text-9xl text-ech1 hover:text-ech2 hover:animate-pulse transition'>
                     Masocha
                 </h1>

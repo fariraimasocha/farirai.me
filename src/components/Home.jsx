@@ -1,8 +1,8 @@
 import React from 'react';
 import Main from './Main';
-import Projects from './Projects';
 import Footer from './Footer';
 import NavModal from './NavModal';
+import Services from './Services';
 
 function Home() {
     return (
@@ -11,7 +11,7 @@ function Home() {
                 <NavModal />
             </nav>
             <Main />
-            {/* <Projects /> */}
+            <Services />
             <Footer />
         </div>
     );
