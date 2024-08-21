@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Main() {
     return (
-        <div className='h-screen flex flex-col items-center justify-center bg-darky1  border-b-2 border-darky1'>
+        <div className='h-screen flex flex-col items-center justify-center bg-gradient-to-r from-darky1 to to-black  border-b-2 border-darky1'>
             <div className='flex-grow flex flex-col items-center justify-center'>
                 <h1 className='font-serif text-5xl md:text-7xl lg:text-9xl text-white hover:text-ech1 hover:animate-pulse'>
                     farirai
