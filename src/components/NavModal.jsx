@@ -73,16 +73,16 @@ const NavModal = () => {
             </div>
 
             {isModalOpen && (
-                <div className='fixed inset-0 bg-yel z-50'>
+                <div className='fixed inset-0 bg-darky1 to to-black z-50'>
                     <div className='absolute top-4 right-4'>
                         <FontAwesomeIcon
                             icon={faTimes}
-                            className='text-5xl px-5 py-5 text-darky1 cursor-pointer transition'
+                            className='text-5xl px-5 py-5 text-white cursor-pointer transition'
                             onClick={toggleModal}
                         />
                     </div>
                     <div className='flex items-center justify-center h-full'>
-                        <section className='grid h-screen place-content-center gap-2 text-black cursor-pointer'>
+                        <section className='grid h-screen place-content-center gap-2 text-white cursor-pointer'>
                             <FlipLink to="/">Home</FlipLink>
                             <FlipLink to="/all-work">All work</FlipLink>
                             <FlipLink to="/about">About</FlipLink>

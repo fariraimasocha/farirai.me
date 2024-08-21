@@ -1,6 +1,7 @@
 import React from 'react'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import SericeCard from './SericeCard'
 
 function Services() {
     return (
@@ -10,41 +11,43 @@ function Services() {
                 <div className='py-1 mt-40 flex space-x-52'>
                     <div>
                         <div className='flex space-x-10'>
-                            <div className='rounded-lg w-72 ring-2 text-center hover:bg-darky1 hover:text-white text-darky1 ring-darky1'>
-                                < FontAwesomeIcon icon={faReact} className='text-5xl' />
-                                <h2 className='text-2xl font-semibold py-2'>Web Development</h2>
-                                <p className='py-2 font-sans text-lg px-2'>Specialize in crafting welt built web applications</p>
-                            </div>
-                            <div className='rounded-lg w-72 ring-2 text-center hover:bg-darky1 hover:text-white text-darky1 ring-darky1'>
-                                < FontAwesomeIcon icon={faReact} className='text-5xl' />
-                                <h2 className='text-2xl font-semibold py-2'>Web Development</h2>
-                                <p className='py-2 font-sans text-lg px-2'>Specialize in crafting welt built web applications</p>
-                            </div>
+                            < SericeCard
+                                name="Name"
+                                description=" description description description description description description description description"
+                                icon={faReact}
+                            />
+                            < SericeCard
+                                name="Name"
+                                description=" description description description description description description description description"
+                                icon={faReact}
+                            />
                         </div>
                         <div className='flex space-x-10 mt-10'>
-                            <div className='rounded-lg w-72 ring-2 text-center hover:bg-darky1 hover:text-white text-darky1 ring-darky1'>
-                                < FontAwesomeIcon icon={faReact} className='text-5xl' />
-                                <h2 className='text-2xl font-semibold py-2'>Web Development</h2>
-                                <p className='py-2 font-sans text-lg px-2'>Specialize in crafting welt built web applications</p>
-                            </div>
-                            <div className='rounded-lg w-72 ring-2 text-center hover:bg-darky1 hover:text-white text-darky1 ring-darky1'>
-                                < FontAwesomeIcon icon={faReact} className='text-5xl' />
-                                <h2 className='text-2xl font-semibold py-2'>Web Development</h2>
-                                <p className='py-2 font-sans text-lg px-2'>Specialize in crafting welt built web applications</p>
-                            </div>
+                            < SericeCard
+                                name="Name"
+                                description=" description description description description description description description description"
+                                icon={faReact}
+                            />
+                            < SericeCard
+                                name="Name"
+                                description=" description description description description description description description description"
+                                icon={faReact}
+                            />
                         </div>
 
                     </div>
                     <div>
-                        <h2 className='text-7xl font-semibold mt-16'>Why Choose Me</h2>
-                        <p className='w-7/12 text-lg font-sans py-3'>Have a good background in web development so i can deliver quality web applications and
+                        <h2 className='text-7xl font-semibold mt-16 text-darky1'>Why Choose Me</h2>
+                        <p className='w-7/12 text-lg font-sans py-3 text-gray-700'>Have a good background in web development so i can deliver quality web applications and
                             services to cater for your buisness and project needs</p>
                         <button
                             type='submit'
-                            className='px-10 mt-2 py-2 rounded-3xl ring-2 ring-darky1 text-darky1 font-semibold text-2xl hover:bg-black hover:text-white'>
+                            className='px-10 mt-2 py-2 rounded-3xl ring-2 ring-darky1 hover:text-darky1 hover:bg-white font-semibold text-2xl bg-darky1 text-white'>
                             Hire Me
                         </button>
+                        <img src="images/lufy.png" alt="" className='h-16  mt-20' />
                     </div>
+
                 </div>
             </div>
         </div>

@@ -9,6 +9,7 @@ function Footer() {
         <div>
             <footer className='py-20 bg-footbg text-ech1'>
 
+
                 <div className='justify-center items-center flex space-x-5 text-2xl font-semibold '>
                     <Link to="/all-work" className='hover:pulse'>All Work</Link>
                     <Link to="/about" className='hover:pulse'>About</Link>
@@ -26,6 +27,7 @@ function Footer() {
                         <FontAwesomeIcon icon={faLinkedin} className='text-4xl hover:text-gray-400 transition' />
                     </a>
                 </div>
+                <img src="images/lufy.png" alt="" className='w-12 h-14 ml-20' />
 
             </footer>
         </div>
