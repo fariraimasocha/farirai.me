@@ -11,7 +11,7 @@ function Home() {
                 <NavModal />
             </nav>
             <Main />
-            <Projects />
+            {/* <Projects /> */}
             <Footer />
         </div>
     );
