@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from 'framer-motion';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 
 const NavModal = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -60,12 +60,15 @@ const NavModal = () => {
                     onClick={toggleModal}
                 />
                 {shouldShowLogo && (
-                    <div className='ml-20 mt-10'>
-                        <div>
-                            <h2 className='text-2xl text-center font-serif'>farirai</h2>
-                            <h2 className='text-3xl text-center font-extrabold'>Masocha</h2>
+                    < Link to="/">
+                        <div className='ml-20 mt-10'>
+                            <div>
+                                <h2 className='text-2xl text-center font-serif'>farirai</h2>
+                                <h2 className='text-3xl text-center font-extrabold'>Masocha</h2>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
+
                 )}
             </div>
 
