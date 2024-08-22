@@ -4,6 +4,7 @@ import Footer from './Footer';
 import NavModal from './NavModal';
 import Services from './Services';
 import Reviews from './Reviews';
+import Skills from './Skills';
 
 function Home() {
     return (
@@ -14,7 +15,9 @@ function Home() {
             <Main />
             <Services />
             < Reviews />
+            < Skills />
             <Footer />
+
         </div>
     );
 }
