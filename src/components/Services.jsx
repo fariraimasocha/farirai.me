@@ -6,9 +6,9 @@ import SericeCard from './SericeCard'
 function Services() {
     return (
         <div className='min-h-screen bg-white'>
-            <div className='px-8 md:px-24'>
+            <div className='px-8 md:px-24 mb-20'>
                 <h2 className="font-serif text-5xl md:text-8xl text-darky1 text-center mt-16 md:mt-32">Services</h2>
-                <div className='py-8 mt-20 md:mt-40 flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10 lg:space-x-52'>
+                <div className='py-8 mt-20 md:mt-24 flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10 lg:space-x-52'>
                     <div>
                         <div className='flex flex-col md:flex-row md:space-x-10 space-y-10 md:space-y-0'>
                             < SericeCard
