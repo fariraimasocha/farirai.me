@@ -3,6 +3,7 @@ import Main from './Main';
 import Footer from './Footer';
 import NavModal from './NavModal';
 import Services from './Services';
+import Reviews from './Reviews';
 
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
             </nav>
             <Main />
             <Services />
+            < Reviews />
             <Footer />
         </div>
     );
