@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 function ServiceCard({ icon, name, description }) {
     return (
         <motion.div
-            className='rounded-lg w-80 ring-2 transition text-center hover:bg-darky1 hover:ring-white hover:text-white text-darky1 ring-darky1'
+            className='rounded-lg w-80 ring-2 transition text-center hover:bg-gray-700 hover:ring-white hover:text-white text-gray-700 ring-gray-700'
             whileHover={{ scale: 1.05, rotate: 1 }}
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0, y: 20 }}
