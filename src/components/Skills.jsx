@@ -7,6 +7,7 @@ import SkillCard from './SkillCard';
 const Skills = () => {
     return (
         <div className="py-10 bg-gray-100 px-10 ">
+            <h2 className="text-7xl font-bold  text-gray-600 text-center mt-14 mb-20">Skills</h2>
             <div className='flex space-x-5'>
                 < SkillCard icon={faReact} />
                 < SkillCard icon={faHtml5} />
@@ -19,7 +20,7 @@ const Skills = () => {
                 < SkillCard icon={faPython} />
                 < SkillCard icon={faPhp} />
             </div>
-            <div className='flex space-x-5 mt-5'>
+            <div className='flex space-x-5 mt-5 mb-20'>
                 < SkillCard icon={faSass} />
                 < SkillCard icon={faJs} />
                 < SkillCard icon={faLinux} />
