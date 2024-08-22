@@ -1,6 +1,7 @@
 import React from 'react';
 import NavModal from './NavModal';
 import Footer from './Footer';
+import { motion } from 'framer-motion';
 
 function Contact() {
     const handleDownload = () => {
@@ -47,11 +48,14 @@ function Contact() {
                             />
                         </div>
                         <div className='mt-8 text-center'>
-                            <button
+                            <motion.button
+                                whileTap={{
+                                    scale: 0.85
+                                }}
                                 type='submit'
                                 className='px-6 py-2 rounded-3xl ring-2 ring-darky1 text-darky1 font-semibold text-2xl hover:bg-black hover:text-white'>
                                 Send Message
-                            </button>
+                            </motion.button>
                         </div>
                     </form>
                 </div>

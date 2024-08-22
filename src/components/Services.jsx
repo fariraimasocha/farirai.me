@@ -2,6 +2,7 @@ import React from 'react';
 import { faReact, faAndroid } from '@fortawesome/free-brands-svg-icons';
 import { faPalette, faBullhorn } from '@fortawesome/free-solid-svg-icons';
 import SericeCard from './SericeCard';
+import { motion } from 'framer-motion';
 
 function Services() {
     return (
@@ -38,15 +39,18 @@ function Services() {
                     <div>
                         <h2 className='text-5xl md:text-5xl font-semibold mt-10 md:mt-32 text-gray-700'>Why Choose Me</h2>
                         <p className='w-full text-base md:text-lg font-sans py-3 text-gray-700'>
-                            With a strong background in web development, I deliver quality web applications and services
+                            With a strong background in web app development, I deliver quality web applications and services
                             to meet your business and project needs.
 
                         </p>
-                        <button
+                        <motion.button
+                            whileTap={{
+                                scale: 0.85
+                            }}
                             type='submit'
                             className='px-8 md:px-10 mt-4 md:mt-2 py-2 rounded-3xl ring-2 ring-gray-700 hover:text-gray-700 hover:bg-white font-semibold text-xl md:text-2xl bg-gray-700 text-white'>
                             Hire Me
-                        </button>
+                        </motion.button>
                         <img src="images/lufy.png" alt="" className='h-16 mt-10 md:mt-20' />
                     </div>
                 </div>
