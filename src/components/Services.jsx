@@ -36,8 +36,8 @@ function Services() {
                         </div>
                     </div>
                     <div>
-                        <h2 className='text-5xl md:text-7xl font-semibold mt-10 md:mt-16 text-darky1'>Why Choose Me</h2>
-                        <p className='w-full md:w-7/12 text-base md:text-lg font-sans py-3 text-gray-700'>Have a good background in web development so I can deliver quality web applications and services to cater for your business and project needs</p>
+                        <h2 className='text-5xl md:text-5xl font-semibold mt-10 md:mt-16 text-darky1'>Why Choose Me</h2>
+                        <p className='w-full text-base md:text-lg font-sans py-3 text-gray-700'>Have a good background in web development so I can deliver quality web applications and services to cater for your business and project needs</p>
                         <button
                             type='submit'
                             className='px-8 md:px-10 mt-4 md:mt-2 py-2 rounded-3xl ring-2 ring-darky1 hover:text-darky1 hover:bg-white font-semibold text-xl md:text-2xl bg-darky1 text-white'>

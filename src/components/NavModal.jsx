@@ -52,7 +52,7 @@ const NavModal = () => {
 
     return (
         <div>
-            <div className='flex items-center'>
+            <div className='flex items-center bg-darky1'>
                 <FontAwesomeIcon
                     icon={faBars}
                     className='text-3xl md:text-6xl hover:text-gray-400 text-white transition absolute 
@@ -61,7 +61,7 @@ const NavModal = () => {
                 />
                 {shouldShowLogo && (
                     < Link to="/">
-                        <div className='ml-20 mt-10'>
+                        <div className='ml-20 text-white mb-10 mt-10'>
                             <div>
                                 <h2 className='text-2xl text-center font-serif'>farirai</h2>
                                 <h2 className='text-3xl text-center font-extrabold'>Masocha</h2>

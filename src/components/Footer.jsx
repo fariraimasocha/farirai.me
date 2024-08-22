@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function Footer() {
     return (
         <div>
-            <footer className='py-20 bg-footbg text-ech1'>
+            <footer className='py-20 bg-darky1 text-white'>
 
 
                 <div className='justify-center items-center flex space-x-5 text-2xl font-semibold '>
