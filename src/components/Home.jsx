@@ -13,11 +13,12 @@ function Home() {
                 <NavModal />
             </nav>
             <Main />
-            <Services />
-            < Reviews />
-            < Skills />
+            <div id="services"> {/* Add ID here for scrolling */}
+                <Services />
+            </div>
+            <Reviews />
+            <Skills />
             <Footer />
-
         </div>
     );
 }

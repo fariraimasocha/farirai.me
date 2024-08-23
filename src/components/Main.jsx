@@ -4,6 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from 'framer-motion';
 
 function Main() {
+    const handleScroll = () => {
+        const nextSection = document.getElementById('services'); // ID of the next section
+        if (nextSection) {
+            nextSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <div className='h-screen flex flex-col items-center justify-center bg-darky1 border-b-2 border-darky1'>
             <div className='flex-grow flex flex-col items-center justify-center'>
@@ -17,7 +24,7 @@ function Main() {
                 <div className='flex space-x-4 md:space-x-8 justify-center items-center mt-10'>
                     <motion.div
                         whileTap={{ scrollMarginBottom: 5 }}
-
+                        onClick={handleScroll} // Adding click event handler
                     >
                         <FontAwesomeIcon
                             icon={faChevronCircleDown}
