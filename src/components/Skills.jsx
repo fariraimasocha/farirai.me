@@ -1,11 +1,15 @@
 import React from 'react';
 import { faReact, faHtml5, faCss3, faNodeJs, faAngular, faLaravel, faPython, faPhp, faSass, faJs, faLinux, faLinode } from '@fortawesome/free-brands-svg-icons';
 import SkillCard from './SkillCard';
+import { motion } from 'framer-motion'
 
 const Skills = () => {
     return (
         <div className="py-10 bg-gray-100 px-10">
-            <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-600 text-center mt-14 mb-20">Skills</h2>
+            <motion.h2
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-600 text-center mt-14 mb-20">Skills</motion.h2>
             <div className='flex flex-wrap justify-center gap-5'>
                 <SkillCard icon={faReact} color='#61DAFB' />
                 <SkillCard icon={faHtml5} color='#E34F26' />

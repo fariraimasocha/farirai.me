@@ -5,16 +5,18 @@ import { motion } from 'framer-motion';
 function ServiceCard({ icon, name, description }) {
     return (
         <motion.div
-            className='rounded-lg w-80 ring-2 transition text-center hover:bg-gray-700 hover:ring-white hover:text-white text-gray-700 ring-gray-700'
-            whileHover={{ scale: 1.05, rotate: 1 }}
+            className='w-full mx-auto rounded-lg bg-white border border-gray-200 p-6 text-gray-800 font-light mb-6 shadow-lg transition-shadow duration-300 ease-in-out hover:shadow-xl'
+            whileHover={{ scale: 1.05, translateY: -5 }}
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
         >
-            <FontAwesomeIcon icon={icon} className='text-5xl mt-4' />
-            <h2 className='text-2xl font-semibold py-2'>{name}</h2>
-            <p className='py-2 font-sans text-lg px-2'>{description}</p>
+            <div className="w-full flex flex-col items-center">
+                <FontAwesomeIcon icon={icon} className='text-5xl text-gray-700 mb-4' />
+                <h2 className='text-2xl font-semibold text-gray-700 mb-2'>{name}</h2>
+                <p className='text-lg text-gray-600 text-center'>{description}</p>
+            </div>
         </motion.div>
     );
 }
