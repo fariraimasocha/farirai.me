@@ -1,6 +1,7 @@
 import React from 'react';
 import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { motion } from 'framer-motion';
 
 function Main() {
     return (
@@ -14,10 +15,15 @@ function Main() {
                     Masocha
                 </h1>
                 <div className='flex space-x-4 md:space-x-8 justify-center items-center mt-10'>
-                    <FontAwesomeIcon
-                        icon={faChevronCircleDown}
-                        className='hover:text-ech2 transition text-4xl md:text-5xl lg:text-6xl text-white animate-bounce'
-                    />
+                    <motion.div
+                        whileTap={{ scrollMarginBottom: 5 }}
+
+                    >
+                        <FontAwesomeIcon
+                            icon={faChevronCircleDown}
+                            className='hover:text-ech2 transition text-4xl md:text-5xl lg:text-6xl text-white animate-bounce'
+                        />
+                    </motion.div>
                     <div className='text-white font-sans text-lg md:text-xl'>
                         <h1 className='mt-4 md:mt-6'>SOFTWARE</h1>
                         <h1 className='mt-0.5'>DEVELOPER</h1>
