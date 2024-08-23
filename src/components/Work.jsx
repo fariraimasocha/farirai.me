@@ -1,14 +1,11 @@
 
 import React from 'react';
-import NavModal from './NavModal';
-import Footer from './Footer';
 import Card from './Card';
 
 
-function AllWork() {
+function Work() {
     return (
         <div className='min-h-screen flex flex-col'>
-            <NavModal />
             <div className='bg-white py-20 min-h-screen'>
                 <div className="flex flex-col md:flex-row md:space-x-5 mb-4 text-darky1 justify-center mx-auto text-4xl md:text-7xl hover:animate-pulse">
                     <h2 className="text-6xl md:text-7xl font-bold mb-5 text-gray-600 text-center mt-14">ALL WORK</h2>
@@ -43,9 +40,9 @@ function AllWork() {
                     </div>
                 </div>
             </div>
-            <Footer />
+
         </div>
     );
 }
 
-export default AllWork;
+export default Work;
