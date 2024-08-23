@@ -16,11 +16,13 @@ function Services() {
                                 name="Web Development"
                                 description="Creating high-quality, responsive websites using modern technologies like React.js, ensuring seamless user experiences across all devices."
                                 icon={faReact}
+                                color="#3776AB"
                             />
                             <SericeCard
                                 name="Android Development"
                                 description="Building efficient, user-friendly Android applications tailored to your needs, ensuring performance and scalability."
                                 icon={faAndroid}
+                                color="#68A063"
                             />
                         </div>
                         <div className='flex flex-col md:flex-row md:space-x-10 space-y-10 md:space-y-0 mt-10'>
@@ -28,11 +30,13 @@ function Services() {
                                 name="UI/UX Design"
                                 description="Designing intuitive and visually appealing user interfaces that provide excellent user experiences, keeping your users engaged."
                                 icon={faPalette}
+                                color="#1572B6"
                             />
                             <SericeCard
                                 name="Digital Marketing"
                                 description="Crafting digital marketing strategies to enhance your online presence, boost engagement, and drive business growth."
                                 icon={faBullhorn}
+                                color="#181532"
                             />
                         </div>
                     </div>
