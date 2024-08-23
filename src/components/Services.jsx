@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 function Services() {
     return (
         <div className='min-h-screen bg-white'>
-            <div className='px-8 md:px-24 mb-20'>
+            <div className='px-8 md:px-20 mb-20'>
                 <h2 className="text-6xl md:text-7xl font-bold mb-5 text-gray-600 text-center mt-14">Services</h2>
                 <div className='py-8 mt-20 md:mt-24 flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10 lg:space-x-52'>
                     <div>
@@ -42,8 +42,8 @@ function Services() {
                     </div>
                     <div className="flex flex-col items-center justify-center text-center md:flex-row md:justify-between md:text-left">
                         <div>
-                            <h2 className='text-5xl md:text-4xl font-semibold mt-10 md:mt-24 text-gray-700'>Why Choose Me</h2>
-                            <p className='w-full text-base font-sans py-3 text-gray-700'>
+                            <h2 className='text-5xl md:text-4xl font-bold mt-10 md:mt-20 text-gray-700'>Why Choose Me</h2>
+                            <p className='w-full text-base md:text-lg font-sans py-3 text-gray-700'>
                                 With a strong background in web app development, I deliver quality web applications and services
                                 to meet your business and project needs.
                             </p>
@@ -52,7 +52,7 @@ function Services() {
                                     scale: 0.85
                                 }}
                                 type='submit'
-                                className='px-8 md:px-10 mt-4 md:mt-2 py-2 rounded-3xl ring-2 ring-gray-700 hover:text-gray-700 hover:bg-white font-semibold text-xl md:text-2xl bg-gray-700 text-white'>
+                                className='px-8 md:px-6 mt-4 md:mt-2 py-0.5 rounded-3xl ring-2 ring-gray-700 hover:text-gray-700 hover:bg-white font-semibold text-xl md:text-2xl bg-gray-700 text-white'>
                                 Hire Me
                             </motion.button>
                         </div>
