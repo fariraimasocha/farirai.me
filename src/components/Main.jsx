@@ -23,8 +23,9 @@ function Main() {
                 </h1>
                 <div className='flex space-x-4 md:space-x-8 justify-center items-center mt-10'>
                     <motion.div
-                        whileTap={{ scrollMarginBottom: 5 }}
-                        onClick={handleScroll} // Adding click event handler
+                        whileTap={{ scrollMarginBottom: 5, scale: 0.85 }}
+                        whileHover={{ scale: 1.5 }}
+                        onClick={handleScroll}
                     >
                         <FontAwesomeIcon
                             icon={faChevronCircleDown}

@@ -55,7 +55,7 @@ const NavModal = () => {
             <div className='flex items-center bg-darky1'>
                 <FontAwesomeIcon
                     icon={faBars}
-                    className='text-3xl md:text-6xl hover:text-gray-400 text-white transition absolute 
+                    className='text-3xl md:text-6xl text-white transition absolute hover:scale-125
                     right-4 top-4 md:right-20 md:top-10 cursor-pointer'
                     onClick={toggleModal}
                 />

@@ -8,9 +8,8 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import {
-    faDatabase, faCode, faCloud, faServer, faTerminal,
-    faProjectDiagram,
-    faFileCode, faClipboardCheck, faBug, faLightbulb, faTasks,
+    faDatabase, faCode, faCloud, faServer,
+    faTasks,
 } from '@fortawesome/free-solid-svg-icons';
 
 import SkillCard from './SkillCard';
