@@ -4,13 +4,13 @@ import {
     faPython, faPhp, faSass, faJs, faLinux, faLinode, faJava,
     faGitAlt, faDocker, faSwift, faVuejs, faBootstrap, faJenkins,
     faAws, faNpm, faYarn, faFigma, faTrello, faJira, faBitbucket,
-    faSlack, faSalesforce, faWordpress, faMagento
+    faSlack, faSalesforce, faWordpress, faMagento, faGit, faGithub, faAmazonPay, faSymfony, faAlipay, faStripe
 } from '@fortawesome/free-brands-svg-icons';
 
 import {
     faDatabase, faCode, faCloud, faServer, faTerminal,
-    faCogs, faLaptopCode, faMobileAlt, faProjectDiagram,
-    faChartLine, faClipboardList, faLock, faUser, faComments
+    faProjectDiagram,
+    faFileCode, faClipboardCheck, faBug, faLightbulb, faTasks,
 } from '@fortawesome/free-solid-svg-icons';
 
 import SkillCard from './SkillCard';
@@ -51,17 +51,18 @@ const skills = [
     { icon: faCode, color: '#6E5494' },
     { icon: faCloud, color: '#00ADEF' },
     { icon: faServer, color: '#1F8EFA' },
-    { icon: faTerminal, color: '#008080' },
-    { icon: faCogs, color: '#FFA500' },
-    { icon: faLaptopCode, color: '#FF6347' },
-    { icon: faMobileAlt, color: '#0000FF' },
-    { icon: faProjectDiagram, color: '#FF4500' },
-    // New skills added below
-    { icon: faChartLine, color: '#4CAF50' }, // Chart Line icon for analytics
-    { icon: faClipboardList, color: '#FF9800' }, // Clipboard List icon for project management
-    { icon: faLock, color: '#F44336' }, // Lock icon for security
-    { icon: faUser, color: '#2196F3' }, // User icon for user management
-    { icon: faComments, color: '#9C27B0' } // Comments icon for communication
+    { icon: faSymfony, color: '#008080' },
+    { icon: faGit, color: '#FF4500' },
+    { icon: faGithub, color: '#007ACC' },
+    { icon: faAmazonPay, color: '#4CAF50' },
+    { icon: faAlipay, color: '#F44336' },
+    { icon: faStripe, color: '#FFC107' },
+    { icon: faTasks, color: '#2196F3' },
+    { icon: faNodeJs, color: '#68A063' },
+    { icon: faReact, color: '#61DAFB' },
+    { icon: faAngular, color: '#DD0031' },
+    { icon: faJava, color: '#007396' },
+    { icon: faPython, color: '#3776AB' }
 ];
 
 const Skills = () => {

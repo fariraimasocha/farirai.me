@@ -13,7 +13,7 @@ function Home() {
                 <NavModal />
             </nav>
             <Main />
-            <div id="services"> {/* Add ID here for scrolling */}
+            <div id="services">
                 <Services />
             </div>
             <Reviews />
