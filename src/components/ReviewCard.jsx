@@ -5,7 +5,7 @@ const ReviewCard = ({ name, imageSrc, reviewText, delay }) => {
     return (
         <motion.div
             whileHover={{
-                scale: 1.20
+                scale: 1.90
             }}
             className="px-3 md:w-1/3"
             initial={{ opacity: 0, y: 50 }}
