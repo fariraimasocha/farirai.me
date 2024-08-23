@@ -9,7 +9,11 @@ const Card = ({ title, description, imageSrc, link }) => {
     };
 
     return (
-        <div
+        <motion.div
+            whileHover={{
+                scale: 1.1,
+                translateY: 1.2
+            }}
             className="bg-white border border-gray-200 rounded-lg shadow cursor-pointer"
             onClick={handleClick}
         >
@@ -28,7 +32,7 @@ const Card = ({ title, description, imageSrc, link }) => {
                     <FontAwesomeIcon icon={faArrowRight} />
                 </motion.button>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
