@@ -4,7 +4,10 @@ import {
     faPython, faPhp, faSass, faJs, faLinux, faLinode, faJava,
     faGitAlt, faDocker, faSwift, faVuejs, faBootstrap, faJenkins,
     faAws, faNpm, faYarn, faFigma, faTrello, faJira, faBitbucket,
-    faSlack, faSalesforce, faWordpress, faMagento, faGit, faGithub, faAmazonPay, faSymfony, faAlipay, faStripe
+    faSlack, faSalesforce, faWordpress, faMagento, faGit, faGithub,
+    faAmazonPay, faSymfony, faAlipay, faStripe, faAndroid, faApplePay,
+    faBrave, faPaypal, faCloudflare
+
 } from '@fortawesome/free-brands-svg-icons';
 
 import {
@@ -47,7 +50,7 @@ const skills = [
     { icon: faWordpress, color: '#21759B' },
     { icon: faMagento, color: '#EE672F' },
     { icon: faDatabase, color: '#4DB33D' },
-    { icon: faCode, color: '#6E5494' },
+    { icon: faPaypal, color: '#6E5494' },
     { icon: faCloud, color: '#00ADEF' },
     { icon: faServer, color: '#1F8EFA' },
     { icon: faSymfony, color: '#008080' },
@@ -56,12 +59,12 @@ const skills = [
     { icon: faAmazonPay, color: '#4CAF50' },
     { icon: faAlipay, color: '#F44336' },
     { icon: faStripe, color: '#FFC107' },
-    { icon: faTasks, color: '#2196F3' },
+    { icon: faCloudflare, color: '#2196F3' },
     { icon: faNodeJs, color: '#68A063' },
     { icon: faReact, color: '#61DAFB' },
-    { icon: faAngular, color: '#DD0031' },
-    { icon: faJava, color: '#007396' },
-    { icon: faPython, color: '#3776AB' }
+    { icon: faAndroid, color: '#DD0031' },
+    { icon: faBrave, color: '#007396' },
+    { icon: faApplePay, color: '#3776AB' }
 ];
 
 const Skills = () => {
