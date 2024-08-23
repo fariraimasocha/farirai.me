@@ -72,8 +72,11 @@ function Reviews() {
                             ))}
                         </div>
                     </div>
+                    <img src="images/lufy.png" alt="" className='w-12 h-14 ml-96 left-5' />
                 </div>
+
             </div>
+
         </div>
     );
 }
