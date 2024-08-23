@@ -4,6 +4,9 @@ import { motion } from 'framer-motion';
 const ReviewCard = ({ name, imageSrc, reviewText, delay }) => {
     return (
         <motion.div
+            whileHover={{
+                scale: 1.20
+            }}
             className="px-3 md:w-1/3"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
