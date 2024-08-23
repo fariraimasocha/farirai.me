@@ -25,7 +25,7 @@ const Card = ({ title, description, imageSrc, link }) => {
                     whileTap={{
                         scale: 0.85
                     }}
-                    className="inline-flex space-x-3 items-center px-5 py-2 text-sm font-medium text-center text-white bg-darky1 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                    className="inline-flex space-x-3 items-center px-10 py-3 text-sm font-medium text-center text-white bg-darky1 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
                     onClick={handleClick}
                 >
                     <h1 className='tracking-wider'>Visit</h1>
