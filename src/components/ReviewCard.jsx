@@ -12,7 +12,7 @@ const ReviewCard = ({ name, imageSrc, reviewText, delay }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay }}
         >
-            <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+            <div className="w-full cursor-pointer mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                 <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
                         <img src={imageSrc} alt={name} />
