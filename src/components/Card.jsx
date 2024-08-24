@@ -10,28 +10,21 @@ const Card = ({ title, description, imageSrc, link }) => {
 
     return (
         <motion.div
-            whileHover={{
-                scale: 1.1,
-                translateY: 1.2
-            }}
-            className="bg-white border border-gray-200 rounded-lg shadow cursor-pointer"
+            whileHover={{ scale: 1.05 }}
+            className="relative group bg-white border border-gray-200 rounded-lg shadow cursor-pointer overflow-hidden transition-transform duration-300"
             onClick={handleClick}
         >
-            <img className="rounded-t-lg" src={imageSrc} alt={title} />
+            <img className="w-full h-64 object-cover rounded-t-lg" src={imageSrc} alt={title} />
             <div className="p-5">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">{title}</h5>
                 <p className="mb-3 font-normal text-gray-700">{description}</p>
-                <motion.button
-                    whileTap={{
-                        scale: 0.85
-                    }}
-                    className="inline-flex space-x-3 items-center px-10 py-3 text-sm font-medium text-center text-white bg-darky1 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
-                    onClick={handleClick}
-                >
-                    <h1 className='tracking-wider'>Visit</h1>
-                    <FontAwesomeIcon icon={faArrowRight} />
-                </motion.button>
             </div>
+            {/* Overlay with opacity */}
+            <motion.div
+                className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+                <FontAwesomeIcon icon={faArrowRight} className="text-white text-4xl" />
+            </motion.div>
         </motion.div>
     );
 };
