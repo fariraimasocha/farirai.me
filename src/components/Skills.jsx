@@ -5,8 +5,8 @@ import {
     faGitAlt, faDocker, faSwift, faVuejs, faBootstrap, faJenkins,
     faAws, faNpm, faYarn, faFigma, faTrello, faJira, faBitbucket,
     faSlack, faSalesforce, faWordpress, faMagento, faGit, faGithub,
-    faAmazonPay, faSymfony, faAlipay, faStripe, faAndroid, faApplePay,
-    faBrave, faPaypal, faCloudflare, faCodepen
+    faAmazonPay, faSymfony, faStripe, faAndroid, faApplePay,
+    faBrave, faPaypal, faCloudflare, faCodepen, faBlogger
 
 } from '@fortawesome/free-brands-svg-icons';
 
@@ -64,7 +64,8 @@ const skills = [
     { icon: faReact, color: '#61DAFB' },
     { icon: faAndroid, color: '#DD0031' },
     { icon: faBrave, color: '#007396' },
-    { icon: faApplePay, color: '#3776AB' }
+    { icon: faApplePay, color: '#3776AB' },
+    { icon: faBlogger, color: '#3776AB' }
 ];
 
 const Skills = () => {
