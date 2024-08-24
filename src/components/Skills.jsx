@@ -7,12 +7,10 @@ import {
     faSlack, faSalesforce, faWordpress, faMagento, faGit, faGithub,
     faAmazonPay, faSymfony, faStripe, faAndroid, faApplePay,
     faBrave, faPaypal, faCloudflare, faCodepen, faBlogger
-
 } from '@fortawesome/free-brands-svg-icons';
 
 import {
-    faDatabase, faCode, faCloud, faServer,
-    faTasks,
+    faDatabase, faCode, faCloud, faServer, faTasks,
 } from '@fortawesome/free-solid-svg-icons';
 
 import SkillCard from './SkillCard';
@@ -68,19 +66,34 @@ const skills = [
     { icon: faBlogger, color: '#3776AB' }
 ];
 
+const revealVariant = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
 const Skills = () => {
     return (
         <div className="py-10 bg-gray-100 px-10">
             <img src="images/lufy.png" alt="" className='w-12 h-14 ml-20' />
             <motion.h2
+                initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-600 text-center mt-14 mb-20">
+                className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-600 text-center mt-14 mb-20"
+            >
                 Skills
             </motion.h2>
             <div className='flex flex-wrap justify-center gap-10'>
                 {skills.map((skill, index) => (
-                    <SkillCard key={index} icon={skill.icon} color={skill.color} />
+                    <motion.div
+                        key={index}
+                        variants={revealVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
+                        <SkillCard icon={skill.icon} color={skill.color} />
+                    </motion.div>
                 ))}
             </div>
         </div>
