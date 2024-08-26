@@ -2,6 +2,7 @@ import React from 'react';
 import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from 'framer-motion';
+import NavModal from './NavModal';
 
 function Main() {
     const handleScroll = () => {
@@ -13,6 +14,7 @@ function Main() {
 
     return (
         <div className='relative h-screen flex flex-col items-center justify-center bg-darky1 border-b-2 border-darky2'>
+            <NavModal />
             <div className='flex flex-col items-center justify-center text-center'>
                 <motion.h1
                     className='font-serif text-5xl md:text-7xl lg:text-9xl text-white mb-4'

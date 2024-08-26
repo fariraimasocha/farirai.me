@@ -47,7 +47,6 @@ const NavModal = () => {
         );
     };
 
-    // Determine whether to show the logo
     const shouldShowLogo = location.pathname === '/contact' || location.pathname === '/all-work' || location.pathname === '/about' || location.pathname === '/project' || location.pathname === '/project/flixtechs' || location.pathname === '/project/codecrafters' || location.pathname === '/project/metbank';
 
     return (
