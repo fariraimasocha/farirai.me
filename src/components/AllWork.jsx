@@ -39,6 +39,13 @@ function AllWork() {
                             imageSrc="images/chatsphere.png"
                             link="http://shantel.shop"
                         />
+                        <Card
+                            title="Genie AI"
+                            description="
+                            Effortlessly create engaging LinkedIn posts that showcase your unique style. With just a single click, our AI-powered tool generates content tailored to your voice, helping you stand out and make a lasting impression."
+                            imageSrc="images/genie.png"
+                            link="#"
+                        />
 
                     </div>
                 </div>
