@@ -44,7 +44,7 @@ function AllWork() {
                             description="
                             Effortlessly create engaging LinkedIn posts that showcase your unique style. With just a single click, our AI-powered tool generates content tailored to your voice, helping you stand out and make a lasting impression."
                             imageSrc="images/genie.png"
-                            link="#"
+                            link="https://github.com/fariraimasocha/linkgenie"
                         />
 
                     </div>
