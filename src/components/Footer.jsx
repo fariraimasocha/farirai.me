@@ -27,8 +27,6 @@ function Footer() {
                         <FontAwesomeIcon icon={faLinkedin} className='text-4xl hover:text-gray-400 transition' />
                     </a>
                 </div>
-                <img src="images/lufy.png" alt="" className='w-12 h-14 ml-20' />
-
             </footer>
         </div>
     )

@@ -41,7 +41,6 @@ function Reviews() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
                         >
-                            <img src="images/lufy.png" alt="" className='w-12 h-14' />
                             <h1 className="text-6xl md:text-7xl font-bold mb-5 text-gray-600">
                                 What people <br />are saying.
                             </h1>

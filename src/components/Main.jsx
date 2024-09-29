@@ -24,14 +24,6 @@ function Main() {
                 >
                     Farirai
                 </motion.h1>
-                <motion.img
-                    src="images/lufy.png"
-                    alt="Lufy"
-                    className='w-32 mb-4 transition-transform transform hover:scale-110'
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.6, ease: 'easeOut' }}
-                />
                 <motion.h1
                     className='font-extrabold text-5xl md:text-7xl lg:text-9xl text-white mb-6'
                     initial={{ opacity: 0, y: 50 }}

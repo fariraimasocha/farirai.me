@@ -110,15 +110,6 @@ function Services() {
                                 Hire Me
                             </motion.button>
                         </div>
-                        <motion.img
-                            src="images/lufy.png"
-                            alt=""
-                            className='h-16 mt-10 md:mt-20'
-                            variants={scaleRevealVariant}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                        />
                     </div>
                 </div>
             </div>
